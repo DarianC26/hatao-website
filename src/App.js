@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Nav from './Nav.js'
+import Nav from './Nav.js';
+import Home from './Home.js';
 import React from 'react';
 
 function App() {
@@ -8,6 +9,9 @@ function App() {
     <BrowserRouter>
       <div className='nav-wrapper'>
         <Nav />
+      </div>
+      <div className='home'>
+        <Home />
       </div>
     </BrowserRouter>
   );
