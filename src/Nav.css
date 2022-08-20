@@ -1,0 +1,35 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 8vh;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px rgb(150, 150, 150);
+    padding: 2rem;
+}
+
+nav > img {
+    width: 7rem;
+    height: 7rem;
+}
+
+.nav-links {
+    width: 30%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.nav-links > a {
+    text-decoration: none;
+    list-style: none;
+    color: rgb(85, 85, 85);
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    padding-right: 3rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
