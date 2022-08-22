@@ -3,7 +3,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     max-height: 8vh;
-    background-color: #fefdfe;
+    background-color: #000000;
     color: black;
     -moz-box-shadow: 0 0 3px #ccc;
     -webkit-box-shadow: 0 0 3px #ccc;
@@ -26,7 +26,7 @@ nav > img {
 .nav-links > a {
     text-decoration: none;
     list-style: none;
-    color: rgb(85, 85, 85);
+    color: rgb(198, 198, 198);
     font-family: 'Montserrat';
     font-size: 2.2vh;
     padding-left: 3vw;

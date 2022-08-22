@@ -1,12 +1,12 @@
 .container {
-    height: 200vh;
+    height: 140vh;
     width: 100vw;
 }
 
 .intro-banner {
-    height: 44%;
+    height: 62.85%;
     width: 100%;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3) ), url(./images/image5.jpeg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1) ), url(./images/cones.png);
     background-size: 100vw 88vh;
     background-repeat: no-repeat;
 }
@@ -33,14 +33,6 @@
     color: white;
 }
 
-.underline {
-    width: 100%;
-    height: 5vh;
-    background-image: url(https://www.gordonramsayrestaurants.com/en/us/gordon-ramsay-burger/gordon-ramsay-burger/images/brush-stroke.png);
-    background-size: 35vw 2.5vh;
-    background-repeat: no-repeat;
-}
-
 .find-us {
     width: 100%;
     font-family: 'Open Sans' ,sans-serif;
@@ -60,6 +52,11 @@
     line-height: 50px;
     padding: 0 30px;
     border-radius: 25px;
+}
+
+.btn > a {
+    text-decoration: none;
+    color: black;
 }
 
 .menu-btn-wrapper {
@@ -87,4 +84,78 @@
 .menu {
     height: 100%;
     width: 100%;
+    background-image: url(https://images.getbento.com/accounts/5a58a286d18827b66bbb9b7fb917492a/media/images/89610chalkboard.jpg);
 }
+
+.gallery-container {
+    width: 100%;
+    height: 75%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.gallery-text {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sample-text {
+    padding-left: 10vw;
+}
+
+.sample-text > h1 {
+    font-family: 'Personal Services', sans-serif;
+    padding-bottom: 10vh;
+    font-size: 5vh;
+}
+
+.sample-text > h3, p {
+    padding-bottom: 2.5vh;
+}
+
+br {
+    padding-top: 5vh;
+}
+
+.slideshow {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vh;
+    color: white;
+}
+
+.slideshow > i {
+    padding: 1vw;
+}
+
+.slideshow > i:hover {
+    -webkit-filter: brightness(70%);
+	-moz-filter: brightness(70%);
+	-o-filter: brightness(70%);
+	-ms-filter: brightness(70%);
+	filter: brightness(70%);
+}
+
+.slideshow > img {
+    max-width: 40vw;
+    max-height: 75vh;
+    width: 100%;
+    height: 100%;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }

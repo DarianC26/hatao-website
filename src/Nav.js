@@ -1,6 +1,6 @@
 import React from 'react';
 import './Nav.css';
-import logo from './images/Ha-Tao.png';
+import logo from './images/black-logo.png';
 import {Link} from 'react-router-dom';
 
 function Nav() {
