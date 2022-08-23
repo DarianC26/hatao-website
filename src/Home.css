@@ -113,6 +113,7 @@
 .sample-text > h1 {
     font-family: 'Personal Services', sans-serif;
     font-size: 5vh;
+    padding-bottom: 5vh;
 }
 
 .sample-text > h3, p {
@@ -132,6 +133,7 @@ br {
     align-items: center;
     font-size: 10vh;
     color: white;
+    transform: rotate(8deg);
 }
 
 .slideshow > i {
@@ -146,11 +148,21 @@ br {
 	filter: brightness(70%);
 }
 
-.slideshow > img {
+.picture {
     max-width: 40vw;
     max-height: 75vh;
     width: 100%;
     height: 100%;
+    border-color: white;
+    border: 5vh solid;
+}
+
+.tape {
+    position: absolute;
+    bottom: 90vh;
+    width: 10vw;
+    height: 10vh;
+    transform: rotate(-10deg);
 }
 
 .fade {
@@ -199,8 +211,8 @@ br {
     }
 
     .slideshow > img {
-        max-width: 75vw;
-        max-height: 75vh;
+        max-width: 60vw;
+        max-height: 50vh;
         width: 100%;
         height: 100%;
     }
@@ -208,5 +220,9 @@ br {
     .slideshow > i {
         font-size: 5vh;
         padding: 2vh;
+    }
+
+    .tape {
+        display:none;
     }
 }
