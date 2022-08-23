@@ -162,3 +162,22 @@ br {
     from {opacity: .4} 
     to {opacity: 1}
   }
+
+@media screen and (max-width: 800px) {
+    .intro-text > span {
+        font-size: 10vh;
+    }
+
+    .intro-text > h1 {
+        font-size: 10vh;
+    }
+
+    .intro-banner {
+        background-size: 100vw 75vh;
+        height: 53.57%;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+}
