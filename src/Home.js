@@ -4,6 +4,7 @@ import image1 from './images/image1.jpeg';
 import image2 from './images/image2.jpeg';
 import image3 from './images/image3.jpeg';
 import tape from './images/tape.png';
+import {Link} from 'react-router-dom';
 
 
 function Home() {
@@ -15,7 +16,7 @@ function Home() {
 
     function scrollToMenu() {
         var elmntToView = document.getElementById("menu");
-        elmntToView.scrollIntoView(); 
+        elmntToView.scrollIntoView();
     }
 
     function test(num) {
@@ -41,7 +42,7 @@ function Home() {
                     <div className='underline'></div>
                     <div className='find-us'>
                         <p>Shrimpin' ain't easy. So come find us at your nearest location!</p>
-                        <button className='btn'><a href='/contact'>Find Us</a></button>
+                        <button className='btn'><Link to="/contact">Find Us</Link></button>
                     </div>
                 </div>
                 <div className='menu-btn-wrapper'>
