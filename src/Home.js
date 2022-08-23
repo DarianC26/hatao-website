@@ -69,6 +69,10 @@ function Home() {
                     </div>
                 </div>
             </div>
+
+            <div className='location'>
+
+            </div>
         </div>
     );
 }

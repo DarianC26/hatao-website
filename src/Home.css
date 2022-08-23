@@ -2,12 +2,14 @@
 @font-face {font-family: "Personal Services"; src: url("//db.onlinewebfonts.com/t/e37ba0ad1ac022fc0a8165b92c73785b.eot"); src: url("//db.onlinewebfonts.com/t/e37ba0ad1ac022fc0a8165b92c73785b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/e37ba0ad1ac022fc0a8165b92c73785b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/e37ba0ad1ac022fc0a8165b92c73785b.woff") format("woff"), url("//db.onlinewebfonts.com/t/e37ba0ad1ac022fc0a8165b92c73785b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/e37ba0ad1ac022fc0a8165b92c73785b.svg#Personal Services") format("svg"); }
 
 .container {
-    height: 140vh;
+    display: grid;
+    grid-template-rows: 88vh 106vh 106vh;
+    height: 300vh;
     width: 100vw;
 }
 
 .intro-banner {
-    height: 62.85%;
+    height: 100%;
     width: 100%;
     background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1) ), url(./images/cones-v2.png);
     background-size: 100vw 88vh;
@@ -85,6 +87,7 @@
 }
 
 .menu {
+    max-height: 150vh;
     height: 100%;
     width: 100%;
     background-image: url(https://images.getbento.com/accounts/5a58a286d18827b66bbb9b7fb917492a/media/images/89610chalkboard.jpg);
@@ -92,9 +95,10 @@
 
 .gallery-container {
     width: 100%;
-    height: 75%;
+    height: 100%;
     display: grid;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 40% 60%;
+    overflow: hidden;
 }
 
 .gallery-text {
@@ -126,7 +130,7 @@ br {
 }
 
 .slideshow {
-    width: 90%;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -163,6 +167,10 @@ br {
     width: 10vw;
     height: 10vh;
     transform: rotate(-10deg);
+}
+
+.location {
+    background-image: url('https://thumbs.dreamstime.com/b/work-progress-warning-sign-stencil-yellow-black-stripes-painted-over-concrete-wall-cement-texture-background-concept-123015550.jpg');
 }
 
 .fade {
