@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './Home.css';
 import image1 from './images/image1.jpeg';
 import image2 from './images/image2.jpeg';
@@ -61,7 +61,7 @@ function Home() {
                     </div>
                     <div className='slideshow'>
                         <i className="fa fa-angle-left" aria-hidden="true" onClick={() => test(-1)}></i>
-                        <img className='fade' id='test' src={image1}></img>
+                        <img className='fade' id='test' src={image1} alt=''></img>
                         <i className="fa fa-angle-right" aria-hidden="true" onClick={() => test(1)}></i>
                     </div>
                 </div>
