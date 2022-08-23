@@ -9,7 +9,7 @@
 .intro-banner {
     height: 62.85%;
     width: 100%;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1) ), url(./images/cones.png);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1) ), url(./images/cones-v2.png);
     background-size: 100vw 88vh;
     background-repeat: no-repeat;
 }
@@ -112,12 +112,12 @@
 
 .sample-text > h1 {
     font-family: 'Personal Services', sans-serif;
-    padding-bottom: 10vh;
     font-size: 5vh;
 }
 
 .sample-text > h3, p {
     padding-bottom: 2.5vh;
+    font-family: 'Montserrat';
 }
 
 br {
@@ -163,7 +163,7 @@ br {
     to {opacity: 1}
   }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px){
     .intro-text > span {
         font-size: 10vh;
     }
@@ -173,7 +173,40 @@ br {
     }
 
     .intro-banner {
-        background-size: 100vw 75vh;
-        height: 53.57%;
+        background-image: url(./images/mobile-cones.png);
+        background-size: 100vw 88vh;
+        height: 62.85%;
+    }
+
+    .gallery-container {
+        grid-template-rows: 60% 40%;
+        grid-template-columns: none;
+    }
+
+    .sample-text {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .sample-text > h1{
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+        font-size: 3vh;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .slideshow > img {
+        max-width: 75vw;
+        max-height: 75vh;
+        width: 100%;
+        height: 100%;
+    }
+
+    .slideshow > i {
+        font-size: 5vh;
+        padding: 2vh;
     }
 }
