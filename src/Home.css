@@ -170,7 +170,13 @@ br {
 }
 
 .location {
-    background-image: url('https://thumbs.dreamstime.com/b/work-progress-warning-sign-stencil-yellow-black-stripes-painted-over-concrete-wall-cement-texture-background-concept-123015550.jpg');
+    width: 100%;
+    height: 100%;
+}
+
+.map {
+    width: 60vw;
+    height: 70vh;
 }
 
 .fade {

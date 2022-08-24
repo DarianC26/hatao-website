@@ -4,8 +4,6 @@ import image1 from './images/image1.jpeg';
 import image2 from './images/image2.jpeg';
 import image3 from './images/image3.jpeg';
 import tape from './images/tape.png';
-import {Link} from 'react-router-dom';
-
 
 function Home() {
     var n = 0;
@@ -16,6 +14,11 @@ function Home() {
 
     function scrollToMenu() {
         var elmntToView = document.getElementById("menu");
+        elmntToView.scrollIntoView();
+    }
+
+    function scrollToMap() {
+        var elmntToView = document.getElementById("finder");
         elmntToView.scrollIntoView();
     }
 
@@ -42,7 +45,7 @@ function Home() {
                     <div className='underline'></div>
                     <div className='find-us'>
                         <p>Shrimpin' ain't easy. So come find us at your nearest location!</p>
-                        <button className='btn'><Link to="/contact">Find Us</Link></button>
+                        <button className='btn' onClick={scrollToMap}>Find Us</button>
                     </div>
                 </div>
                 <div className='menu-btn-wrapper'>
@@ -70,8 +73,13 @@ function Home() {
                 </div>
             </div>
 
-            <div className='location'>
-
+            <div className='location' id='finder'>
+                <iframe
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBdY9eD7iLu0V3kC60fpwZrGUYLTDky79Y&q=Harborside+Pl,Jersey+City,NJ" title='myframe' className='map'>
+                </iframe>
             </div>
         </div>
     );
