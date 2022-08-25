@@ -2,12 +2,14 @@
 @font-face {font-family: "Personal Services"; src: url("//db.onlinewebfonts.com/t/e37ba0ad1ac022fc0a8165b92c73785b.eot"); src: url("//db.onlinewebfonts.com/t/e37ba0ad1ac022fc0a8165b92c73785b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/e37ba0ad1ac022fc0a8165b92c73785b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/e37ba0ad1ac022fc0a8165b92c73785b.woff") format("woff"), url("//db.onlinewebfonts.com/t/e37ba0ad1ac022fc0a8165b92c73785b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/e37ba0ad1ac022fc0a8165b92c73785b.svg#Personal Services") format("svg"); }
 
 .container {
-    height: 140vh;
+    display: grid;
+    grid-template-rows: 88vh 106vh 106vh;
+    height: 300vh;
     width: 100vw;
 }
 
 .intro-banner {
-    height: 62.85%;
+    height: 100%;
     width: 100%;
     background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1) ), url(./images/cones-v2.png);
     background-size: 100vw 88vh;
@@ -25,7 +27,7 @@
     font-weight: 400;
     line-height: 1em;
     font-style: normal;
-    color: #e00505de;
+    color: #e51111de;
     padding-top: 15vh;
     padding-bottom: 5vh;
 }
@@ -85,6 +87,7 @@
 }
 
 .menu {
+    max-height: 150vh;
     height: 100%;
     width: 100%;
     background-image: url(https://images.getbento.com/accounts/5a58a286d18827b66bbb9b7fb917492a/media/images/89610chalkboard.jpg);
@@ -92,9 +95,10 @@
 
 .gallery-container {
     width: 100%;
-    height: 75%;
+    height: 100%;
     display: grid;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 40% 60%;
+    overflow: hidden;
 }
 
 .gallery-text {
@@ -107,16 +111,16 @@
 }
 
 .sample-text {
-    padding-left: 10vw;
+    padding-left: 5vw;
 }
 
 .sample-text > h1 {
     font-family: 'Personal Services', sans-serif;
-    font-size: 5vh;
+    font-size: 5vw;
     padding-bottom: 5vh;
 }
 
-.sample-text > h3, p {
+.sample-text > h2, p {
     padding-bottom: 2.5vh;
     font-family: 'Montserrat';
 }
@@ -126,7 +130,7 @@ br {
 }
 
 .slideshow {
-    width: 90%;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -165,6 +169,44 @@ br {
     transform: rotate(-10deg);
 }
 
+.location {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2) ),url(./images/fries.png);
+    background-size: 100vw 106vh;
+    background-repeat: none;
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+.find-us-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.find-us-wrapper > h1{    
+    align-self: flex-end;
+    font-family: 'Personal Services', sans-serif;
+    font-size: 7.5vh;
+    color: white;
+}
+
+.map-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 80vh;
+}
+
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -176,22 +218,23 @@ br {
   }
 
 @media screen and (max-width: 600px){
+    
     .intro-text > span {
         font-size: 10vh;
     }
 
     .intro-text > h1 {
-        font-size: 10vh;
+        font-size: 8vh;
     }
 
     .intro-banner {
         background-image: url(./images/mobile-cones.png);
         background-size: 100vw 88vh;
-        height: 62.85%;
+        height: 100%;
     }
 
     .gallery-container {
-        grid-template-rows: 60% 40%;
+        grid-template-rows: 45% 50%;
         grid-template-columns: none;
     }
 
@@ -210,11 +253,13 @@ br {
         display: none;
     }
 
-    .slideshow > img {
+    .picture {
         max-width: 60vw;
-        max-height: 50vh;
+        max-height: 40vh;
         width: 100%;
         height: 100%;
+        border-color: white;
+        border: 2.5vh solid;
     }
 
     .slideshow > i {

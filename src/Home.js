@@ -4,8 +4,6 @@ import image1 from './images/image1.jpeg';
 import image2 from './images/image2.jpeg';
 import image3 from './images/image3.jpeg';
 import tape from './images/tape.png';
-import {Link} from 'react-router-dom';
-
 
 function Home() {
     var n = 0;
@@ -16,6 +14,11 @@ function Home() {
 
     function scrollToMenu() {
         var elmntToView = document.getElementById("menu");
+        elmntToView.scrollIntoView();
+    }
+
+    function scrollToMap() {
+        var elmntToView = document.getElementById("finder");
         elmntToView.scrollIntoView();
     }
 
@@ -42,7 +45,7 @@ function Home() {
                     <div className='underline'></div>
                     <div className='find-us'>
                         <p>Shrimpin' ain't easy. So come find us at your nearest location!</p>
-                        <button className='btn'><Link to="/contact">Find Us</Link></button>
+                        <button className='btn' onClick={scrollToMap}>Find Us</button>
                     </div>
                 </div>
                 <div className='menu-btn-wrapper'>
@@ -55,7 +58,7 @@ function Home() {
                     <div className='gallery-text'>
                         <div className='sample-text'>
                             <h1>SPICY BBQ SHRIMPS LIKE YOU'VE NEVER TASTED BEFORE</h1>
-                            <h3>Ha-tao means Shrimp Head</h3>
+                            <h2>Ha-tao means Shrimp Head</h2>
                             <p>The prized morsel of crustacean is known to hold delicious and intense flavors.</p>
                             <br></br>
                             <p>Our signature dish, Asian BBQ Shrimp is a perfect representation of our food - savory, spicy, and complex</p>
@@ -67,6 +70,20 @@ function Home() {
                         <img className='picture' id='test' src={image1} alt=''></img>
                         <i className="fa fa-angle-right" aria-hidden="true" onClick={() => test(1)}></i>
                     </div>
+                </div>
+            </div>
+
+            <div className='location' id='finder'>
+                <div className='find-us-wrapper'>
+                    <h1>Visit Us At Smorgasburg</h1>
+                </div>
+                <div className='map-wrapper'>
+                    <iframe
+                        loading="lazy"
+                        allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBdY9eD7iLu0V3kC60fpwZrGUYLTDky79Y&q=Harborside+Pl,Jersey+City,NJ" title='myframe' className='map'>
+                    </iframe>
                 </div>
             </div>
         </div>

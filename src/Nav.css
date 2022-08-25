@@ -33,3 +33,15 @@ nav > img {
     letter-spacing: 2px;
     font-weight: bold;    
 }
+
+@media screen and (max-width: 600px){
+
+    .nav-links > a {
+        font-size: 1.75vh;
+    }
+
+    nav > img {
+        width: 10vh;
+        height: 10vh;
+    }
+}
