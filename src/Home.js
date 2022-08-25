@@ -1,16 +1,19 @@
 import React from 'react';
 import './Home.css';
 import image1 from './images/image1.jpeg';
-import image2 from './images/image2.jpeg';
 import image3 from './images/image3.jpeg';
+import image4 from './images/fries.png';
+import image0 from './images/bbqshrimp.png';
 import tape from './images/tape.png';
+
 
 function Home() {
     var n = 0;
     const images = [];
-    images[0] = image1;
-    images[1] = image2;
+    images[0] = image0;
+    images[1] = image1;
     images[2] = image3;
+    images[3] = image4;
 
     function scrollToMenu() {
         var elmntToView = document.getElementById("menu");
@@ -67,7 +70,7 @@ function Home() {
                     <div className='slideshow'>
                         <i className="fa fa-angle-left" aria-hidden="true" onClick={() => test(-1)}></i>
                         <img className='tape' src={tape} alt=''></img>
-                        <img className='picture' id='test' src={image1} alt=''></img>
+                        <img className='picture' id='test' src={image0} alt=''></img>
                         <i className="fa fa-angle-right" aria-hidden="true" onClick={() => test(1)}></i>
                     </div>
                 </div>

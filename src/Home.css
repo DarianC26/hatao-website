@@ -27,7 +27,7 @@
     font-weight: 400;
     line-height: 1em;
     font-style: normal;
-    color: #e51111de;
+    color: #ffffff;
     padding-top: 15vh;
     padding-bottom: 5vh;
 }
@@ -274,7 +274,7 @@ br {
     }
 
     .location {
-        grid-template-rows: 30% 70%;
+        grid-template-rows: 20% 80%;
     }
 
     .find-us-wrapper > h1{    
@@ -287,6 +287,6 @@ br {
 
     .map {
         width: 80vw;
-        height: 60vh;
+        height: 70vh;
     }
 }
