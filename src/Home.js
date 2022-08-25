@@ -75,7 +75,7 @@ function Home() {
 
             <div className='location' id='finder'>
                 <div className='find-us-wrapper'>
-                    <h1>Visit Us At Smorgasburg</h1>
+                    <h1>Visit Us At Smorgasburg At Jersey City</h1>
                 </div>
                 <div className='map-wrapper'>
                     <iframe

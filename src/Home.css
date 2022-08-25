@@ -186,7 +186,8 @@ br {
     justify-content: center;
 }
 
-.find-us-wrapper > h1{    
+.find-us-wrapper > h1{  
+    display: flex;  
     align-self: flex-end;
     font-family: 'Personal Services', sans-serif;
     font-size: 7.5vh;
@@ -269,5 +270,22 @@ br {
 
     .tape {
         display:none;
+    }
+
+    .location {
+        grid-template-rows: 30% 70%;
+    }
+
+    .find-us-wrapper > h1{    
+        align-self: flex-end;
+        font-family: 'Personal Services', sans-serif;
+        text-align: center;
+        font-size: 5vh;
+        color: white;
+    }
+
+    .map {
+        width: 80vw;
+        height: 60vh;
     }
 }
