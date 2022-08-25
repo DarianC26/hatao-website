@@ -58,7 +58,7 @@ function Home() {
                     <div className='gallery-text'>
                         <div className='sample-text'>
                             <h1>SPICY BBQ SHRIMPS LIKE YOU'VE NEVER TASTED BEFORE</h1>
-                            <h3>Ha-tao means Shrimp Head</h3>
+                            <h2>Ha-tao means Shrimp Head</h2>
                             <p>The prized morsel of crustacean is known to hold delicious and intense flavors.</p>
                             <br></br>
                             <p>Our signature dish, Asian BBQ Shrimp is a perfect representation of our food - savory, spicy, and complex</p>
@@ -74,12 +74,17 @@ function Home() {
             </div>
 
             <div className='location' id='finder'>
-                <iframe
-                    loading="lazy"
-                    allowfullscreen
-                    referrerpolicy="no-referrer-when-downgrade"
-                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBdY9eD7iLu0V3kC60fpwZrGUYLTDky79Y&q=Harborside+Pl,Jersey+City,NJ" title='myframe' className='map'>
-                </iframe>
+                <div className='find-us-wrapper'>
+                    <h1>Visit Us At Smorgasburg</h1>
+                </div>
+                <div className='map-wrapper'>
+                    <iframe
+                        loading="lazy"
+                        allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBdY9eD7iLu0V3kC60fpwZrGUYLTDky79Y&q=Harborside+Pl,Jersey+City,NJ" title='myframe' className='map'>
+                    </iframe>
+                </div>
             </div>
         </div>
     );

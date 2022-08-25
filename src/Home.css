@@ -116,11 +116,11 @@
 
 .sample-text > h1 {
     font-family: 'Personal Services', sans-serif;
-    font-size: 5vh;
+    font-size: 5vw;
     padding-bottom: 5vh;
 }
 
-.sample-text > h3, p {
+.sample-text > h2, p {
     padding-bottom: 2.5vh;
     font-family: 'Montserrat';
 }
@@ -172,11 +172,39 @@ br {
 .location {
     width: 100%;
     height: 100%;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2) ),url(./images/fries.png);
+    background-size: 100vw 106vh;
+    background-repeat: none;
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+.find-us-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.find-us-wrapper > h1{    
+    align-self: flex-end;
+    font-family: 'Personal Services', sans-serif;
+    font-size: 7.5vh;
+    color: white;
+}
+
+.map-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 60vw;
-    height: 70vh;
+    height: 80vh;
 }
 
 .fade {
