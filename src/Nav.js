@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 function Nav() {
     return (
         <nav>
-            <img src={logo} alt=''></img>
+            <a href='/'><img src={logo} onClick='' alt=''></img></a>
             <ul className='nav-links'>
                 <Link to="/">
                     <li>HOME</li>

@@ -1,0 +1,71 @@
+.containerform {
+    height: 88vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg");
+    background-size: 100vw 88vh;
+    font-family: "Personal Services"
+}
+
+.contact-title {
+    padding-top: 10vh;
+    color: white;
+    text-transform: uppercase;
+    transition: all 2s ease-in-out;
+}
+
+.contact-title > h1 {
+    font-size: 5vh;
+    line-height: 3vh;
+    padding-bottom: 2vh;
+}
+
+.contact-title > h2 {
+    font-size: 3vh;
+}
+
+form {
+    padding-top: 5vh;
+    transition: all 2s ease-in-out;
+}
+
+.form-control {
+    width: 80%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(19, 19, 19);
+    color: white;
+    font-size: 4vh;
+    padding-bottom: 5vh;
+}
+
+input {
+    height: 3vh;
+}
+
+input[type="text"] {
+    font-size: 3vh;
+}
+
+form .submit {
+    font-family: 'Montserrat';
+
+}
+
+form .submit:hover {
+    -webkit-filter: brightness(70%);
+	-moz-filter: brightness(70%);
+	-o-filter: brightness(70%);
+	-ms-filter: brightness(70%);
+	filter: brightness(70%);
+    transition: 1s;
+}
+
+::placeholder {
+    font-size: 3vh;
+    font-family: 'Montserrat';
+    color: white;
+}

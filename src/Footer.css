@@ -1,4 +1,4 @@
-nav {
+.footernav {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -11,40 +11,35 @@ nav {
     padding: 2vh;
 }
 
-nav > a > img {
-    width: 11vh;
-    height: 11vh;
+.footernav > a > img {
+    width: 10vh;
+    height: 10vh;
 }
 
-.nav-links {
-    width: 50%;
+.footer-links {
     display: flex;
-    justify-content: right;
+    justify-content: left;
     align-items: center;
 }
 
-.nav-links > a {
+.footer-links > li{
     text-decoration: none;
     list-style: none;
     color: rgb(198, 198, 198);
     font-family: 'Montserrat';
-    padding-left: 3vw;
     letter-spacing: 2px;
-    font-weight: bold;    
-}
-
-.nav-links > a > li {
-    font-size: 2.2vh;
+    font-weight: bold; 
+    font-size: 4vh;   
 }
 
 @media screen and (max-width: 600px){
 
-    .nav-links > a {
-        font-size: 1.75vh;
+    .footer-links > li {
+        font-size: 2vh;
     }
 
-    nav > img {
-        width: 10vh;
-        height: 10vh;
+    .footernav > a > img {
+        width: 7.5vh;
+        height: 7.5vh;
     }
 }
