@@ -10,7 +10,7 @@ function Footer() {
                 <li>Follow Us</li>
             </ul>
             <a href='https://www.instagram.com/hataonyc/'><img src={insta} alt=''></img></a>
-            <a href='/'><img src={tiktok} alt=''></img></a>
+            <a href='https://www.tiktok.com/@hataonyc?_t=8V8kzpiNTO2&_r=1'><img src={tiktok} alt=''></img></a>
         </nav>
     );
 }
